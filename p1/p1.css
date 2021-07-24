@@ -1,0 +1,72 @@
+/* 背景那個灰色色碼為 #F2F2F2
+藍色色碼為 #00a0e9
+整體寬度為 800px
+右上角按鈕背景色為 #D5DFE3 ，文字顏色為 #62808F */
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #000; */
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.wrap {
+  width: 800px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  color: #62808f;
+}
+.btn {
+  padding: 0px 10px;
+  margin: 0px 10px;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+.container {
+  border-top: 3px solid #00a0e9;
+  background-color: #fff;
+}
+
+.item {
+  display: flex;
+  height: 120px;
+}
+.item__like,
+.item__comment,
+.item__view {
+  min-width: 60px;
+  text-align: center;
+  line-height: 120px;
+}
+
+.item__context {
+  display: flex;
+  flex-direction: column;
+}
+.item__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  border: 1px solid #eee;
+}
